@@ -149,7 +149,7 @@ Libre font:
 ### Known Issues
 
 * Several Armenian letters have their uppercase and lowercase currently look identical in SynPix, namely Ժժ, Իի and Կկ.
-* The symbol is Mercury `☿` (U+263F) is missing while the symbols for all the other planets are present. This will the patched in the next version.
+* The symbol of Mercury `☿` (U+263F) is missing while the symbols for all the other planets are present. This will the patched in the next version.
 
 ## 2023m27a (2023/09/26)
 
@@ -162,7 +162,43 @@ Libre font:
 * Add the following 3 CJKV ideograph variant forms: `鄧麗麗`.
 * SynPix was separated into its own repository.
 
-*Changelogs between version 2023m15a and 2023m26a have not been completed yet.*
+*Changelogs between version 2023m15b and 2023m26a have not been completed yet.*
+
+## 2023m24a (2023/08/31)
+
+- Commit `octavia/1f604f4770dd00741c72f1cec6b1ccbbb8b8adfb` at 2023-08-31 03:32:37
+
+* All but 9 characters (`⼢⼮⿋⿎⿏⿐⿒⿔⿕`) in the Kangxi radical Unicode block are completed.
+* Add the following 112 CJKV ideographs:
+
+```
+仑代司命坂复威屮廴彡思悅成戶户戸
+攴斉斗斤暢曰殳比港漢爪父爻爿片牙
+玄瓜瓦用疋疒癶皮皿県矢石示禸禾穴
+立米糸缶网老而耒耳聿肉臼舌舛舟艮
+色艸虍虫血行衣襾角言论豆豕豸赤走
+辵邑釆里阜隶青非面革韭音食首香骨
+高髟鬥鬯鬲鬼魚鹵鹿麥麻黃黍黑黽鼎
+```
+
+## 0.2 (2023m19a, 2023/07/04)
+
+```
+♈︎♉︎♊︎♋︎♌︎♍︎♎︎♏︎♐︎♑︎♒︎♓︎
+```
+
+| Unicode Block | New Glyphs |
+| -- | -- |
+| Miscellaneous Symbols | 16 |
+| Total |  |
+
+### Known Issues
+
+* `♐︎` (U+2650) was drawn badly. This would be patched after the release of version 0.3.
+
+## 2023m15b (2023/05/26)
+
+* Add a new typeface: QY true font, which covers ASCII only.
 
 ## 2023m15a (2023/05/21)
 
@@ -224,7 +260,7 @@ A full list of glyphs newly added in this version (287 glyphs):
 * `ー` (U+30FC) and `ｰ` (U+FF70) were incorrectly made shorter than it should be. This is fixed in the version 0.2.
 * `二` (U+4E8C) had its byte sequence encoded incorrectly due to a software bug. This is fixed in the version 0.2.
 * `難` (U+96E3) was drawn as its variant form `难` (U+96BE), with the latter codepoint did not used at the time. This is fixed in the version 2023m24a when variant forms were added.
-* `重` (U+91CD) was drawn extremely badly, and it looked more like `亜` (U+4E9C) instead of `重`. The glyph was remapped to `亜` in the next version.
+* `重` (U+91CD) was drawn extremely badly, and it looked more like `亜` (U+4E9C) instead of `重`. The glyph was remapped to `亜` in the version 0.2.
 
 ## 0.1 (2023m05a, 2023/02/13)
 
