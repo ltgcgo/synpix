@@ -30,14 +30,14 @@
 * Add bagua and astronomical symbols.
 * Add the following kanas: `ぎヷヸヹヺ`.
 * Modify the glyphs for `Æ` (U+00C6), `Œ` (U+0152), `Ѳ` (U+0472) and `つ` (U+3064).
-* Modify the glyph for `卯` (U+536F), `細` (U+7D30) and the related variants.
+* Modify the glyphs for `卯` (U+536F), `細` (U+7D30) and the related variants.
 * Add the following 16 CJKV ideographs: `乌宗岛当敏明泉男礻福純衤裕郎郭鈴`, 9 of which (`敏明泉男福純裕郎鈴`) are urgently needed for Octavia UIs.
 * Add the following 11 CJKV ideograph variant forms: `島嶋嶌烏當纯铃郎鈴福敏`.
 * Remove the glyph for `Ϳ` (U+037F), which was mistakenly mapped as an unused draft of `Ώ` (U+038F) in the past versions all the way from v0.1 (2023m05a).
 * Remove 34 empty glyphs, scattered around the Greek block and the half-width Hangul block.
 * Add two new typefaces: HD44780U-A00 and A02 font, which both have ASCII, EASCII and remapped Unicode characters.
 
-A full list of glyphs newly added in this version, excluding CJKV variant forms (484 glyphs):
+A full list of glyphs newly added in this version, excluding CJKV variant forms (814 glyphs):
 
 ```
 ĀāĄąĆćĈĉČčĎďĐđĒē
@@ -101,7 +101,7 @@ A full list of glyphs newly added in this version, excluding CJKV variant forms 
 ｟｠
 ```
 
-A list of new characters that are remapped onto existing glyphs (105 glyphs):
+A list of new characters that are remapped onto existing glyphs (129 glyphs):
 
 ```
 ŒœŠšŸŽž€
@@ -146,6 +146,11 @@ Libre font:
 | Full-width Brackets | 2 |
 | Total | 814 |
 
+### Known Issues
+
+* Several Armenian letters have their uppercase and lowercase currently look identical in SynPix, namely Ժժ, Իի and Կկ.
+* The symbol is Mercury `☿` (U+263F) is missing while the symbols for all the other planets are present. This will the patched in the next version.
+
 ## 2023m27a (2023/09/26)
 
 * Update `<` and `>` for true font.
@@ -157,7 +162,68 @@ Libre font:
 * Add the following 3 CJKV ideograph variant forms: `鄧麗麗`.
 * SynPix was separated into its own repository.
 
-*Changelogs between version 2023m05a and 2023m26a have not been completed yet.*
+*Changelogs between version 2023m15a and 2023m26a have not been completed yet.*
+
+## 2023m15a (2023/05/21)
+
+* Complete nearly all the undotted kanas (missing `を`). Dotted kanas would be added later.
+* Add half-width kanas.
+* `ぼ` (U+307C) was removed.
+* Modify the glyphs for `こ` (U+3053), `は` (U+306F), `り` (U+308A), `ト` (U+30C8), `ン` (U+30F3).
+* Add the following 117 CJKV ideographs:
+
+```
+一丁七万三丑丙中久乙九习二五亥京
+人亿任兆光克八六典円勇北十千午南
+卜卯口向君四土堀壬声大天女子宏実
+家寅小少尸尾山川己巳布平年庚廿弓
+心恭恵戈戊戌所手施日春昭月木未本
+来松栄森毅氏水浩火田由甲申癸百空
+竹範翠西詩谷越辛辰近郷酉重金長降
+隆难韋駄鳥
+```
+
+A full list of glyphs newly added in this version (287 glyphs):
+
+```
+、。「」
+ぁあぃぅうぇえぉおかきくけさしす
+せそたちっつてとなにぬねひふへほ
+まみむめもゃやゅゆょよらるれろわ
+ん゙゚゛゜
+ァアィゥウェエオカキクケコシスセ
+ソタチッツテナニヌネノハヒヘホミ
+ムメモャヤュユョヨラリレロワヲヴ
+・ー
+一丁七万三丑丙中久乙九习二五亥京
+人亿任兆光克八六典円勇北十千午南
+卜卯口向君四土堀壬声大天女子宏実
+家寅小少尸尾山川己巳布平年庚廿弓
+心恭恵戈戊戌所手施日春昭月木未本
+来松栄森毅氏水浩火田由甲申癸百空
+竹範翠西詩谷越辛辰近郷酉重金長降
+隆難韋駄鳥
+ ｡｢｣､･ｦｧｨｩｪｫｬｭｮｯ
+ｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿ
+ﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏ
+ﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝﾞﾟ
+```
+
+| Unicode Block | New Glyphs |
+| -- | -- |
+| CJK Symbols and Punctuation | 4 |
+| Hiragana | 53 |
+| Katakana | 50 |
+| CJKV Ideographs | 117 |
+| Half-width Kana | 63 |
+| Total | 287 |
+
+### Known Issues
+
+* The glyph for `そ` (U+305D) was mistakenly mapped to `ぜ` (U+305C). This is fixed in the version 2023m..a when dotted kanas were added.
+* `ー` (U+30FC) and `ｰ` (U+FF70) were incorrectly made shorter than it should be. This is fixed in the version 2023m..a.
+* `難` (U+96E3) was drawn as its variant form `难` (U+), with the latter codepoint did not used at the time. This is fixed in a subsequent version when variant forms were added.
+* `重` was drawn extremely bad, and it looked more like `亜` instead of `重`. The glyph was remapped to `亜` in the next version.
 
 ## 0.1 (2023m05a, 2023/02/13)
 
@@ -165,8 +231,9 @@ Libre font:
 * Add basic Greek, Cyrillic and Hebrew.
 * Add Bopomofo and half-width Hangul.
 * Add some kanas, but with a very limited set. Kanas are completed by the next version.
+* Add U+02C6 - U+02CF.
 
-A full list of glyphs newly added in this version (418 glyphs):
+A full list of glyphs newly added in this version (443 glyphs):
 
 ```
       ⏸︎÷◁◀︎♪♫↲↑↓→
@@ -177,6 +244,7 @@ A full list of glyphs newly added in this version (418 glyphs):
 ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß
 àáâãäåæçèéêëìíîï
 ðñòóôõö÷øùúûüýþÿ
+ˆˇˈˉˊˋˌˍˎˏ
 ΆΈΉΊΌΎΏ
 ΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟ
 ΠΡ΢ΣΤΥΦΧΨΩΪΫάέήί
@@ -202,12 +270,10 @@ A full list of glyphs newly added in this version (418 glyphs):
 ￚￛￜ
 ```
 
-* `Ϳ` (U+037F) is mistakenly mapped as an unused draft of `Ώ` (U+038F), this glyph will be removed in the version 0.3.
-* Extended bopomofo was mapped wrongly, this was fixed when full-width Hangul components are added in the version.
-
 | Unicode Block | New Glyphs |
 | -- | -- |
 | Latin-1 Supplement (Latin-9) | 122 |
+| Spacing Modifier Letters | 10 |
 | Greek | 69 |
 | Cyrillic | 74 |
 | Hebrew | 27 |
@@ -216,13 +282,18 @@ A full list of glyphs newly added in this version (418 glyphs):
 | Bopomofo | 43 |
 | Bopomofo Extended | 32 |
 | Half-width Hangul | 51 |
-| Total | 433 |
+| Total | 443 |
+
+### Known Issues
+
+* `Ϳ` (U+037F) is mistakenly mapped as an unused draft of `Ώ` (U+038F), this glyph will be removed in the version 0.3.
+* Extended bopomofo was mapped wrongly onto the Hangul compatibility jamo block, this was fixed when full-width Hangul components are added in a subsequent version.
 
 ## 2022m35a (2022/12/11)
 
 * Update the following glyphs in the libre font: `569jt`, as well as `0x85`.
 * Update the following glyphs in the true font: `%&'()@jkmq~`, as well as `0x60`.
-* Glyph definitions for `0x7f` was briefly removed add `0x86` was briefly added at 2022-09-21 08:32:02, these changes are reverted in the version 2022m35a.
+* Glyph definitions for `0x7f` was briefly removed, and `0x86` was briefly added at 2022-09-21 08:32:02, these changes are reverted in the version 2022m35a.
 
 ## 2022m33a (2022/11/21)
 
