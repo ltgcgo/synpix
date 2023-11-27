@@ -220,10 +220,11 @@ A full list of glyphs newly added in this version (287 glyphs):
 
 ### Known Issues
 
-* The glyph for `そ` (U+305D) was mistakenly mapped to `ぜ` (U+305C). This is fixed in the version 2023m..a when dotted kanas were added.
-* `ー` (U+30FC) and `ｰ` (U+FF70) were incorrectly made shorter than it should be. This is fixed in the version 2023m..a.
-* `難` (U+96E3) was drawn as its variant form `难` (U+), with the latter codepoint did not used at the time. This is fixed in a subsequent version when variant forms were added.
-* `重` was drawn extremely bad, and it looked more like `亜` instead of `重`. The glyph was remapped to `亜` in the next version.
+* The glyph for `そ` (U+305D) was mistakenly mapped to `ぜ` (U+305C). This is fixed in the version 0.2 when dotted kanas were added.
+* `ー` (U+30FC) and `ｰ` (U+FF70) were incorrectly made shorter than it should be. This is fixed in the version 0.2.
+* `二` (U+4E8C) had its byte sequence encoded incorrectly due to a software bug. This is fixed in the version 0.2.
+* `難` (U+96E3) was drawn as its variant form `难` (U+96BE), with the latter codepoint did not used at the time. This is fixed in the version 2023m24a when variant forms were added.
+* `重` (U+91CD) was drawn extremely badly, and it looked more like `亜` (U+4E9C) instead of `重`. The glyph was remapped to `亜` in the next version.
 
 ## 0.1 (2023m05a, 2023/02/13)
 
@@ -287,7 +288,7 @@ A full list of glyphs newly added in this version (443 glyphs):
 ### Known Issues
 
 * `Ϳ` (U+037F) is mistakenly mapped as an unused draft of `Ώ` (U+038F), this glyph will be removed in the version 0.3.
-* Extended bopomofo was mapped wrongly onto the Hangul compatibility jamo block, this was fixed when full-width Hangul components are added in a subsequent version.
+* Extended bopomofo was mapped wrongly onto the Hangul compatibility jamo block, this was fixed when full-width Hangul components are added in the version 0.2.
 
 ## 2022m35a (2022/12/11)
 
