@@ -2,40 +2,40 @@
 
 ## 0.3 (2023m33a, 2023/11/29)
 
-* Complete (basic) coverage for the following languages:
-* * Ainu (Katakana)
-* * Armenian
-* * Belarusian
-* * Coptic
-* * Croatian (no tone marks yet)
-* * Czech
-* * Tai Nüa (a.k.a. Tai Le / Dehong Dai)
-* * Esperanto
-* * Full-width ASCII
-* * Georgian
-* * Kazakh (Cyrillic)
-* * Kyrgyz
-* * Lisu (Fraser alphabet)
-* * Macedonian
-* * Mongolian (Cyrillic)
-* * Polish
-* * Runes
-* * Serbo – Croatian (Latin & Cyrillic, no tone marks yet)
-* * Slovak
-* * Slovene (no tone marks yet)
-* * Tajik
-* * Tuvan
-* * Uzbek (Cyrillic)
-* Add support for IPA glyphs within the range of U+0250 - U+029F.
-* Add bagua and astronomical symbols.
-* Add the following kanas: `ぎヷヸヹヺ`.
-* Modify the glyphs for `Æ` (U+00C6), `Œ` (U+0152), `Ѳ` (U+0472) and `つ` (U+3064).
-* Modify the glyphs for `卯` (U+536F), `細` (U+7D30) and the related variants.
-* Add the following 16 CJKV ideographs: `乌宗岛当敏明泉男礻福純衤裕郎郭鈴`, 9 of which (`敏明泉男福純裕郎鈴`) are urgently needed for Octavia UIs.
-* Add the following 11 CJKV ideograph variant forms: `島嶋嶌烏當纯铃郎鈴福敏`.
-* Remove the glyph for `Ϳ` (U+037F), which was mistakenly mapped as an unused draft of `Ώ` (U+038F) in the past versions all the way from v0.1 (2023m05a).
-* Remove 34 empty glyphs, scattered around the Greek block and the half-width Hangul block.
-* Add two new typefaces: HD44780U-A00 and A02 font, which both have ASCII, EASCII and remapped Unicode characters.
+- Complete (basic) coverage for the following languages:
+  - Ainu (Katakana)
+  - Armenian
+  - Belarusian
+  - Coptic
+  - Croatian (no tone marks yet)
+  - Czech
+  - Tai Nüa (a.k.a. Tai Le / Dehong Dai)
+  - Esperanto
+  - Full-width ASCII
+  - Georgian
+  - Kazakh (Cyrillic)
+  - Kyrgyz
+  - Lisu (Fraser alphabet)
+  - Macedonian
+  - Mongolian (Cyrillic)
+  - Polish
+  - Runes
+  - Serbo – Croatian (Latin & Cyrillic, no tone marks yet)
+  - Slovak
+  - Slovene (no tone marks yet)
+  - Tajik
+  - Tuvan
+  - Uzbek (Cyrillic)
+- Add support for IPA glyphs within the range of U+0250 - U+029F.
+- Add bagua and astronomical symbols.
+- Add the following kanas: `ぎヷヸヹヺ`.
+- Modify the glyphs for `Æ` (U+00C6), `Œ` (U+0152), `Ѳ` (U+0472) and `つ` (U+3064).
+- Modify the glyphs for `卯` (U+536F), `細` (U+7D30) and the related variants.
+- Add the following 16 CJKV ideographs: `乌宗岛当敏明泉男礻福純衤裕郎郭鈴`, 9 of which (`敏明泉男福純裕郎鈴`) are urgently needed for Octavia UIs.
+- Add the following 11 CJKV ideograph variant forms: `島嶋嶌烏當纯铃郎鈴福敏`.
+- Remove the glyph for `Ϳ` (U+037F), which was mistakenly mapped as an unused draft of `Ώ` (U+038F) in the past versions all the way from v0.1 (2023m05a).
+- Remove 34 empty glyphs, scattered around the Greek block and the half-width Hangul block.
+- Add two new typefaces: HD44780U-A00 and A02 font, which both have ASCII, EASCII and remapped Unicode characters.
 
 A full list of glyphs newly added in this version, excluding CJKV variant forms (814 glyphs):
 
@@ -148,19 +148,19 @@ Libre font:
 
 ### Known Issues
 
-* Several Armenian letters have their uppercase and lowercase currently look identical in SynPix, namely Ժժ, Իի and Կկ.
-* The symbol of Mercury `☿` (U+263F) is missing while the symbols for all the other planets are present. This will the patched in the next version.
+- Several Armenian letters have their uppercase and lowercase currently look identical in SynPix, namely Ժժ, Իի and Կկ.
+- The symbol of Mercury `☿` (U+263F) is missing while the symbols for all the other planets are present. This will the patched in the next version.
 
 ## 2023m27a (2023/09/26)
 
-* Update `<` and `>` for true font.
+- Update `<` and `>` for true font.
 
 ## 2023m26a (2023/09/14)
 
-* Add the glyph for the hiragana `を`, which are urgently needed for Octavia UIs.
-* Add the following 2 CJKV ideographs: `丽邓`, which are urgently needed for Octavia UIs.
-* Add the following 3 CJKV ideograph variant forms: `鄧麗麗`.
-* SynPix was separated into its own repository.
+- Add the glyph for the hiragana `を`, which are urgently needed for Octavia UIs.
+- Add the following 2 CJKV ideographs: `丽邓`, which are urgently needed for Octavia UIs.
+- Add the following 3 CJKV ideograph variant forms: `鄧麗麗`.
+- SynPix was separated into its own repository.
 
 *Changelogs between version 2023m15b and 2023m26a have not been completed yet.*
 
@@ -168,8 +168,8 @@ Libre font:
 
 - Commit `octavia/1f604f4770dd00741c72f1cec6b1ccbbb8b8adfb` at 2023-08-31 03:32:37
 
-* All but 9 characters (`⼢⼮⿋⿎⿏⿐⿒⿔⿕`) in the Kangxi radical Unicode block are completed.
-* Add the following 112 CJKV ideographs:
+- All but 9 characters (`⼢⼮⿋⿎⿏⿐⿒⿔⿕`) in the Kangxi radical Unicode block are completed.
+- Add the following 112 CJKV ideographs:
 
 ```
 仑代司命坂复威屮廴彡思悅成戶户戸
@@ -194,19 +194,19 @@ Libre font:
 
 ### Known Issues
 
-* `♐︎` (U+2650) was drawn badly. This would be patched after the release of version 0.3.
+- `♐︎` (U+2650) was drawn badly. This would be patched after the release of version 0.3.
 
 ## 2023m15b (2023/05/26)
 
-* Add a new typeface: QY true font, which covers ASCII only.
+- Add a new typeface: QY true font, which covers ASCII only.
 
 ## 2023m15a (2023/05/21)
 
-* Complete nearly all the undotted kanas (missing `を`). Dotted kanas would be added later.
-* Add half-width kanas.
-* `ぼ` (U+307C) was removed.
-* Modify the glyphs for `こ` (U+3053), `は` (U+306F), `り` (U+308A), `ト` (U+30C8), `ン` (U+30F3).
-* Add the following 117 CJKV ideographs:
+- Complete nearly all the undotted kanas (missing `を`). Dotted kanas would be added later.
+- Add half-width kanas.
+- `ぼ` (U+307C) was removed.
+- Modify the glyphs for `こ` (U+3053), `は` (U+306F), `り` (U+308A), `ト` (U+30C8), `ン` (U+30F3).
+- Add the following 117 CJKV ideographs:
 
 ```
 一丁七万三丑丙中久乙九习二五亥京
@@ -256,19 +256,19 @@ A full list of glyphs newly added in this version (287 glyphs):
 
 ### Known Issues
 
-* The glyph for `そ` (U+305D) was mistakenly mapped to `ぜ` (U+305C). This is fixed in the version 0.2 when dotted kanas were added.
-* `ー` (U+30FC) and `ｰ` (U+FF70) were incorrectly made shorter than it should be. This is fixed in the version 0.2.
-* `二` (U+4E8C) had its byte sequence encoded incorrectly due to a software bug. This is fixed in the version 0.2.
-* `難` (U+96E3) was drawn as its variant form `难` (U+96BE), with the latter codepoint did not used at the time. This is fixed in the version 2023m24a when variant forms were added.
-* `重` (U+91CD) was drawn extremely badly, and it looked more like `亜` (U+4E9C) instead of `重`. The glyph was remapped to `亜` in the version 0.2.
+- The glyph for `そ` (U+305D) was mistakenly mapped to `ぜ` (U+305C). This is fixed in the version 0.2 when dotted kanas were added.
+- `ー` (U+30FC) and `ｰ` (U+FF70) were incorrectly made shorter than it should be. This is fixed in the version 0.2.
+- `二` (U+4E8C) had its byte sequence encoded incorrectly due to a software bug. This is fixed in the version 0.2.
+- `難` (U+96E3) was drawn as its variant form `难` (U+96BE), with the latter codepoint did not used at the time. This is fixed in the version 2023m24a when variant forms were added.
+- `重` (U+91CD) was drawn extremely badly, and it looked more like `亜` (U+4E9C) instead of `重`. The glyph was remapped to `亜` in the version 0.2.
 
 ## 0.1 (2023m05a, 2023/02/13)
 
-* Add Latin-9.
-* Add basic Greek, Cyrillic and Hebrew.
-* Add Bopomofo and half-width Hangul.
-* Add some kanas, but with a very limited set. Kanas are completed by the next version.
-* Add U+02C6 - U+02CF.
+- Add Latin-9.
+- Add basic Greek, Cyrillic and Hebrew.
+- Add Bopomofo and half-width Hangul.
+- Add some kanas, but with a very limited set. Kanas are completed by the next version.
+- Add U+02C6 - U+02CF.
 
 A full list of glyphs newly added in this version (443 glyphs):
 
@@ -323,22 +323,22 @@ A full list of glyphs newly added in this version (443 glyphs):
 
 ### Known Issues
 
-* `Ϳ` (U+037F) is mistakenly mapped as an unused draft of `Ώ` (U+038F), this glyph will be removed in the version 0.3.
-* Extended bopomofo was mapped wrongly onto the Hangul compatibility jamo block, this was fixed when full-width Hangul components are added in the version 0.2.
+- `Ϳ` (U+037F) is mistakenly mapped as an unused draft of `Ώ` (U+038F), this glyph will be removed in the version 0.3.
+- Extended bopomofo was mapped wrongly onto the Hangul compatibility jamo block, this was fixed when full-width Hangul components are added in the version 0.2.
 
 ## 2022m35a (2022/12/11)
 
-* Update the following glyphs in the libre font: `569jt`, as well as `0x85`.
-* Update the following glyphs in the true font: `%&'()@jkmq~`, as well as `0x60`.
-* Glyph definitions for `0x7f` was briefly removed, and `0x86` was briefly added at 2022-09-21 08:32:02, these changes are reverted in the version 2022m35a.
+- Update the following glyphs in the libre font: `569jt`, as well as `0x85`.
+- Update the following glyphs in the true font: `%&'()@jkmq~`, as well as `0x60`.
+- Glyph definitions for `0x7f` was briefly removed, and `0x86` was briefly added at 2022-09-21 08:32:02, these changes are reverted in the version 2022m35a.
 
 ## 2022m33a (2022/11/21)
 
-* Add a new typeface: True font, which covers ASCII only. Codepoints `0x7f` to `0x85` are assigned the same glyphs as the libre font.
+- Add a new typeface: True font, which covers ASCII only. Codepoints `0x7f` to `0x85` are assigned the same glyphs as the libre font.
 
 ## 2022m23a (2022/08/18)
 
-* Add glyphs for ASCII.
+- Add glyphs for ASCII.
 
 A full list of glyphs newly added in this version (102 glyphs):
 
